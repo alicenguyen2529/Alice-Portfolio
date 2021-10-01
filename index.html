@@ -5,18 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alice_Website</title>
+    <title>Alice's Portfolio</title>
     <!-- =====  main CSS ==== -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- =====  default color skin ==== -->
     <link rel="stylesheet" href="assets/css/color.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
     <!-- font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 
 <body>
 
+    <!-- preloader start-->
+    <div class="preloader">
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- preloader end-->
     <!-- =====  header start ==== -->
     <header class="header">
         <div class="container">
@@ -36,35 +49,38 @@
         <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
         <div class="nav-menu-inner">
             <ul>
-                <li><a href="#home-section" class="inner-shadow active">Home</a></li>
-                <li><a href="#about-section" class="outer-shadow hover-in-shadow">About Me</a></li>
-                <li><a href="#skill-section" class="outer-shadow hover-in-shadow">Skills</a></li>
-                <li><a href="#project-section" class="outer-shadow hover-in-shadow">Project</a></li>
-                <li><a href="#contact-section" class="outer-shadow hover-in-shadow">Contact</a></li>
+                <li><a href="#home" class="link-item inner-shadow active">Home</a></li>
+                <li><a href="#about" class="link-item outer-shadow hover-in-shadow">About Me</a></li>
+                <li><a href="#skill" class="link-item outer-shadow hover-in-shadow">Skills</a></li>
+                <li><a href="#project" class="link-item outer-shadow hover-in-shadow">Project</a></li>
+                <li><a href="#contact" class="link-item outer-shadow hover-in-shadow">Contact</a></li>
             </ul>
+            <div class=”fade-out-effect”></div>
         </div>
     </nav>
 
     <!----===== navigation menu end ==== -->
     <!-- =====  home section start ==== -->
-    <section class="home-section section" id="home-section">
-        <div class="row full-screen align-items-center">
-            <div class="home-text">
-                <p>Hello, my name is</p>
-                <h2>ALICE HUONG NGUYEN</h2>
-                <h1>I'm a Software Developer</h1>
-                <a href="#project-section" class="btn-1 outer-shadow hover-in-shadow">My Project <i class="fa fa-folder-open-o"></i></a>
-            </div>
-            <div class="home-img">
-                <div class="img-box inner-shadow">
-                    <img src="assets/img/home.png" class="outer-shadow" alt="profile-pic">
+    <section class="home-section section active" id="home">
+        <div class="container">
+            <div class="row full-screen align-items-center">
+                <div class="home-text">
+                    <p>Hello, my name is</p>
+                    <h2>ALICE HUONG NGUYEN</h2>
+                    <h1>I'm a Software Developer</h1>
+                    <a href="#project" class="link-item btn-1 outer-shadow hover-in-shadow">My Project <i class="fa fa-folder-open-o"></i></a>
+                </div>
+                <div class="home-img">
+                    <div class="img-box inner-shadow">
+                        <img src="assets/img/profile/home.png" class="outer-shadow" alt="profile-pic">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- =====  home section end ==== -->
     <!-- =====  about section start ==== -->
-    <section class="about-section section" id="about-section">
+    <section class="about-section section" id="about">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -74,7 +90,7 @@
             <div class="row">
                 <div class="about-img">
                     <div class="img-box">
-                        <img src="assets/img/aboutme.jpg" class="outer-shadow" alt="profile-pic">
+                        <img src="assets/img/profile/aboutme.jpg" class="outer-shadow" alt="profile-pic">
                     </div>
                     <!-- social links start -->
                     <div class="social-links">
@@ -84,7 +100,7 @@
                     </div>
                     <div class="about-download">
                         <a href="assets/pdf/alicehuongnguyen-resume.pdf" target="_blank" class="btn-1 outer-shadow hover-in-shadow">Download CV <i class="fa fa-download"></i></a>
-                        <a href="#contact-section" class="btn-1 outer-shadow hover-in-shadow">Hire Me</a>
+                        <a href="#contact" class="link-item btn-1 outer-shadow hover-in-shadow">Hire Me</a>
                     </div>
 
                     <!-- social links end -->
@@ -99,37 +115,46 @@
                     <div class="about-tabs">
                         <h3>EDUCATION</h3>
 
-                        <div class="tab-content">
-                            <div class="timeline">
-                                <div class="timeline-item">
-                                    <i class="fa fa-book"></i>
+                        <div class="row">
+                            <div class="experience tab-content">
+                                <div class="row">
+                                    <div class="timeline">
+                                        <div class="row">
+                                            <div class="timeline-item">
+                                                <div class="timeline-item-inner">
+                                                    <i class="fa fa-book icon"></i>
+                                                    <span class="date">2019 - present</span>
+                                                    <h3>Bachelor of Computer Science - The University of Texas at Dallas</h3>
+                                                    <h4>GPA: 3.89/4.0</h4>
+                                                    <p>Phi Theta Kappa Transfer Scholarship </p>
+                                                    <p>Comet Transfer Scholarship</p>
+                                                </div>
+                                            </div>
 
-                                    <span class="date">2019 - present</span>
-                                    <h4>Bachelor of Computer Science - The University of Texas at Dallas</h4>
-                                    <p>GPA: 3.89/4.0</p>
-                                    <p>Phi Theta Kappa Transfer Scholarship </p>
-                                    <p>Comet Transfer Scholarship</p>
-                                </div>
+                                            <div class="timeline-item">
+                                                <div class="timeline-item-inner">
+                                                    <i class="fa fa-graduation-cap icon"></i>
+                                                    <span class="date">2018 - 2019</span>
+                                                    <h3>Associate of Science - Dallas College</h3>
+                                                    <h4>GPA: 3.78/4.0</h4>
+                                                    <p>Magna Cum Laude Latin Honor </p>
+                                                    <p>Phi Theta Kappa Transfer Honor Society</p>
+                                                    <p>President's Honor Roll</p>
+                                                </div>
+                                            </div>
 
-                                <div class="timeline-item">
-                                    <i class="fa fa-graduation-cap"></i>
-                                    <span class="date">2018 - 2019</span>
-                                    <h4>Associate of Science - Dallas College</h4>
-                                    <p>GPA: 3.78/4.0</p>
-                                    <p>Magna Cum Laude Latin Honor </p>
-                                    <p>Phi Theta Kappa Transfer Honor Society</p>
-                                    <p>President's Honor Roll</p>
-                                </div>
-
-                                <div class="timeline-item">
-                                    <i class="fa fa-graduation-cap"></i>
-                                    <span class="date">2013 - 2017</span>
-                                    <h4>Bachelor of Business Adminitration - Van Lang University, Vietnam</h4>
-                                    <p>GPA: 3.65/4.0</p>
-
+                                            <div class="timeline-item">
+                                                <div class="timeline-item-inner">
+                                                    <i class="fa fa-graduation-cap icon"></i>
+                                                    <span class="date">2013 - 2017</span>
+                                                    <h3>Bachelor of Business Adminitration - Van Lang University, Vietnam</h3>
+                                                    <h4>GPA: 3.65/4.0</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
 
@@ -144,8 +169,7 @@
     <!-- =====  about section end ==== -->
 
     <!-- =====  skills section start ==== -->
-    <section class="skill-section section" id="skill-section">
-
+    <section class="skill-section section" id="skill">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -158,30 +182,30 @@
                 <div class="skill-item">
                     <div class="skill-item-inner outer-shadow">
                         <div class="icon inner-shadow">
-                            <img src="assets/img/webdesign.png" alt="skill-pic">
+                            <img src="assets/img/skills/webdesign.png" alt="skill-pic">
                         </div>
                         <h3>Web Design</h3>
-                        <a href="#" class="btn-1 outer-shadow hover-in-shadow">Know More</a>
+                        <p>HTML, CSS, Javascript</p>
                     </div>
                 </div>
 
                 <div class="skill-item">
                     <div class="skill-item-inner outer-shadow">
                         <div class="icon inner-shadow">
-                            <img src="assets/img/angular.png" alt="skill-pic">
+                            <img src="assets/img/skills/angular.png" alt="skill-pic">
                         </div>
                         <h3>Web Application</h3>
-                        <a href="#" class="btn-1 outer-shadow hover-in-shadow">Know More</a>
+                        <p>Angular, NodeJs</p>
                     </div>
                 </div>
 
                 <div class="skill-item">
                     <div class="skill-item-inner outer-shadow">
                         <div class="icon inner-shadow">
-                            <img src="assets/img/web application.png" alt="skill-pic">
+                            <img src="assets/img/skills/web application.png" alt="skill-pic">
                         </div>
                         <h3>Back-end API</h3>
-                        <a href="#" class="btn-1 outer-shadow hover-in-shadow">Know More</a>
+                        <p>Spring, RESTful API, MySQL</p>
                     </div>
                 </div>
                 <!--skill item end-->
@@ -192,7 +216,7 @@
 
 
     <!-- =====  project section start ==== -->
-    <section class="project-section section" id="project-section">
+    <section class="project-section section" id="project">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -202,10 +226,10 @@
             <!--project filter start-->
             <div class="row">
                 <div class="project-filter">
-                    <span class="filter-item outer-shadow active" data-target="All">All</span>
+                    <span class="filter-item outer-shadow active" data-target="all">All</span>
                     <span class="filter-item" data-target="web-design">Web Design</span>
                     <span class="filter-item" data-target="web-application">Web Application</span>
-                    <span class="filter-item" data-target="back-end">Back-end API</span>
+                    <span class="filter-item" data-target="full-stack">Full-stack Application</span>
                 </div>
             </div>
             <!--project filter end-->
@@ -214,24 +238,24 @@
                 <div class="project-item" data-category="web-design">
                     <div class="project-item-inner outer-shadow">
                         <div class="project-item-img">
-                            <img src="assets/img/personalportfolio.jpeg" alt="project" data-screenshots="assets/img/personalportfolio.jpeg">
+                            <img src="assets/img/portfolio/1.png" alt="project" data-screenshots="assets/img/portfolio/1.png, assets/img/portfolio/2.png, assets/img/portfolio/3.png, assets/img/portfolio/4.png">
+                            <span class="view-project">View Details</span>
                         </div>
-                        <h3 class="project-item-title">personal porfolio</h3>
-                        <a href="#" class="btn-1 outer-shadow hover-in-shadow">View Details</a>
+                        <p class="project-item-title">Personal Porfolio</p>
+
                         <!--project item details start-->
                         <div class="project-item-detail">
                             <div class="row">
                                 <div class="description">
                                     <h3>Project Brief</h3>
-                                    <p>Hello</p>
+                                    <p>This is my personal porfolio website developed using HTML, CSS, and JavaScript</p>
                                 </div>
                                 <div class="info">
                                     <h3>Project Infomation</h3>
                                     <ul>
                                         <li>Created - <span>2021</span></li>
                                         <li>Technologies used - <span>HTML, CSS and JavaScript</span></li>
-                                        <li>Role - <span>Killian Nguyen</span></li>
-                                        <li>View Online - <span><a href="#">www.domain.com</a></span></li>
+                                        <li>View Online - <span><a href="https://github.com/alicenguyen2529/Alice-Portfolio">GitHub</a></span></li>
                                     </ul>
                                 </div>
                             </div>
@@ -245,24 +269,29 @@
                 <div class="project-item" data-category="web-application">
                     <div class="project-item-inner outer-shadow">
                         <div class="project-item-img">
-                            <img src="assets/img/todolist.png" alt="project" data-screenshots="assets/img/todolist.png">
+                            <img src="assets/img/budgetcalculator/1.png" alt="project" data-screenshots="assets/img/budgetcalculator/1.png,
+                            assets/img/budgetcalculator/2.png,
+                            assets/img/budgetcalculator/3.png,
+                            assets/img/budgetcalculator/4.png ">
+                            <span class="view-project">View Details</span>
                         </div>
-                        <h3 class="project-item-title">Todo List</h3>
-                        <a href="#" class="btn-1 outer-shadow hover-in-shadow">View Details</a>
+                        <p class="project-item-title">Budget Calculator</p>
+
                         <!--project item details start-->
                         <div class="project-item-detail">
                             <div class="row">
                                 <div class="description">
                                     <h3>Project Brief</h3>
-                                    <p>Hello</p>
+                                    <p>In this project, I created the budget calculator that is a CRUD front-end web application using Angular framework. This application allows users to add new budget items and then those items will be displayed in the
+                                        income or expenses column base on the amount that the users input. The users are able to edit by clicking on the budget items. A dialog will appear, and this dialog allows the users to edit the values of the budget
+                                        item. Furthermore, the users can delete items by hovering over them and clicking on the delete button. The total budget will be calculated and displayed on the screen when the users add, update or delete items.</p>
                                 </div>
                                 <div class="info">
                                     <h3>Project Infomation</h3>
                                     <ul>
                                         <li>Created - <span>2021</span></li>
-                                        <li>Technologies used - <span>HTML, CSS and JavaScript</span></li>
-                                        <li>Role - <span>Killian Nguyen</span></li>
-                                        <li>View Online - <span><a href="#">www.domain.com</a></span></li>
+                                        <li>Technologies used - <span>Angular</span></li>
+                                        <li>View Online - <span><a href="https://github.com/alicenguyen2529/BudgetCalculator">GitHub</a></span></li>
                                     </ul>
                                 </div>
                             </div>
@@ -272,90 +301,48 @@
                 </div>
                 <!--project personal porfolio item end-->
 
-                <!--project item personal profolio start-->
-                <div class="project-item" data-category="web-application">
-                    <div class="project-item-inner outer-shadow">
-                        <div class="project-item-img">
-                            <img src="assets/img/budget.jpeg" alt="project" data-screenshots="assets/img/budget.jpeg">
-                        </div>
-                        <h3 class="project-item-title">Budget Calculator</h3>
-                        <a href="#" class="btn-1 outer-shadow hover-in-shadow">View Details</a>
-                        <!--project item details start-->
-                        <div class="project-item-detail">
-                            <div class="row">
-                                <div class="description">
-                                    <h3>Project Brief</h3>
-                                    <p>Hello</p>
-                                </div>
-                                <div class="info">
-                                    <h3>Project Infomation</h3>
-                                    <ul>
-                                        <li>Created - <span>2021</span></li>
-                                        <li>Technologies used - <span>HTML, CSS and JavaScript</span></li>
-                                        <li>Role - <span>Killian Nguyen</span></li>
-                                        <li>View Online - <span><a href="#">www.domain.com</a></span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!--project item details end-->
-                    </div>
-                </div>
-                <!--project personal porfolio item end-->
 
                 <!--project item personal profolio start-->
-                <div class="project-item" data-category="back-end">
+                <div class="project-item" data-category="full-stack">
                     <div class="project-item-inner outer-shadow">
                         <div class="project-item-img">
-                            <img src="assets/img/loginapp.jpeg" alt="project" data-screenshots="assets/img/loginapp.jpeg">
+                            <img src="assets/img/employeesystem/1.png" alt="project" data-screenshots="assets/img/employeesystem/1.png,
+                            assets/img/employeesystem/2.png,
+                            assets/img/employeesystem/3.png,
+                            assets/img/employeesystem/4.png">
+                            <span class="view-project">View Details</span>
                         </div>
-                        <h3 class="project-item-title">Log-in Application</h3>
-                        <a href="#" class="btn-1 outer-shadow hover-in-shadow">View Details</a>
-                        <!--project item details start-->
-                        <div class="project-item-detail">
-                            <div class="row">
-                                <div class="description">
-                                    <h3>Project Brief</h3>
-                                    <p>Hello</p>
-                                </div>
-                                <div class="info">
-                                    <h3>Project Infomation</h3>
-                                    <ul>
-                                        <li>Created - <span>2021</span></li>
-                                        <li>Technologies used - <span>HTML, CSS and JavaScript</span></li>
-                                        <li>Role - <span>Killian Nguyen</span></li>
-                                        <li>View Online - <span><a href="#">www.domain.com</a></span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!--project item details end-->
-                    </div>
-                </div>
-                <!--project personal porfolio item end-->
+                        <p class="project-item-title">Employee Management System</p>
 
-                <!--project item personal profolio start-->
-                <div class="project-item" data-category="back-end">
-                    <div class="project-item-inner outer-shadow">
-                        <div class="project-item-img">
-                            <img src="assets/img/employeemanagement.png" alt="project" data-screenshots="assets/img/employeemanagement.png">
-                        </div>
-                        <h3 class="project-item-title">Employee System</h3>
-                        <a href="#" class="btn-1 outer-shadow hover-in-shadow">View Details</a>
                         <!--project item details start-->
                         <div class="project-item-detail">
                             <div class="row">
                                 <div class="description">
                                     <h3>Project Brief</h3>
-                                    <p>Hello</p>
+                                    <p>Full-stack CRUD application using Angular and Spring Boot. In this project, I developed a CRUD full-stack web application that illustrates a basic UI (User Interface) for Employee Managemeent Application using Angular
+                                        10 and Spring Boot. This application contains CRUD features such as:
+                                        <ul>
+                                            <li>
+                                                - List Employee
+                                            </li>
+                                            <li>
+                                                - Update Employee
+                                            </li>
+                                            <li>
+                                                - Delete Employee
+                                            </li>
+                                            <li>
+                                                - View Employee
+                                            </li>
+                                        </ul>
+                                    </p>
                                 </div>
                                 <div class="info">
                                     <h3>Project Infomation</h3>
                                     <ul>
                                         <li>Created - <span>2021</span></li>
-                                        <li>Technologies used - <span>HTML, CSS and JavaScript</span></li>
-                                        <li>Role - <span>Killian Nguyen</span></li>
-                                        <li>View Online - <span><a href="#">www.domain.com</a></span></li>
+                                        <li>Technologies used - <span>Angular & Spring</span></li>
+                                        <li>View Online - <span><a href="https://github.com/alicenguyen2529/EmployeeManagementSystem">GitHub</a></span></li>
                                     </ul>
                                 </div>
                             </div>
@@ -369,28 +356,53 @@
     </section>
     <!--project section end -->
 
-    <!--project item details popup start 
-    <div class="project-popup">
-        <div class="pp-inner">
-            <div class="pp-content">
-                <div class="pp-header">
-                    <div class="pp-thumbnail">
-
+    <!--project item details popup start-->
+    <div class="pp project-popup">
+        <div class="pp-details">
+            <div class="pp-details-inner">
+                <div class="pp-title">
+                    <h2>Personal Portfolio</h2>
+                    <p>Category - <span class="pp-project-category">Web Design</span></p>
+                </div>
+                <div class="pp-project-details">
+                    <div class="row">
+                        <div class="description">
+                            <h3>Project Brief:</h3>
+                            <p>This is my personal porfolio website developed using HTML, CSS, and JavaScript</p>
+                        </div>
+                        <div class="info">
+                            <h3>Project Infomation</h3>
+                            <ul>
+                                <li>Created - <span>2021</span></li>
+                                <li>Technologies used - <span>HTML, CSS and JavaScript</span></li>
+                                <li>View Online - <span><a href="#">GitHub</a></span></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="separator"></div>
+
+        <div class="pp-main">
+            <div class="pp-main-inner">
+                <div class="pp-project-detail-btn outer-shadow hover-in-shadow">Project Details <i class="fa fa-plus"></i></div>
+                <div class="pp-close outer-shadow hover-in-shadow">&times;</div>
+                <img src="assets/img/portfolio/personalportfolio.jpeg" alt="img" class="pp-img outer-shadow">
+                <div class="pp-counter">1 of 4</div>
+            </div>
+            <div class="pp-loader">
+                <div></div>
+            </div>
+            <!-- pp navigation -->
+            <div class="pp-prev"><i class="fa fa-play"></i></div>
+            <div class="pp-next"><i class="fa fa-play"></i></div>
+        </div>
     </div>
-
-
-
-
-
-    project item details popup end -->
-
+    <!-- project item details popup end -->
 
     <!-- =====  contact section start ==== -->
-    <section class="contact-section section" id="contact-section">
+    <section class="contact-section section" id="contact">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -424,7 +436,7 @@
             </div>
             <div class="row">
                 <div class="contact-form">
-                    <form>
+                    <form action="https://formsubmit.co/alice.nguyen2529@email.com" method="POST">
                         <div class="row">
                             <div class="w-50">
                                 <div class="input-group outer-shadow hover-in-shadow">
@@ -446,7 +458,7 @@
                         </div>
                         <div class="row">
                             <div class="submit-btn">
-                                <button type="submit" class="btn-1 outer-shadow hover-in-shadow">Send Message</button>
+                                <button type="submit" class="link-item btn-1 outer-shadow hover-in-shadow">Send Message</button>
                             </div>
                         </div>
                     </form>
@@ -474,8 +486,9 @@
             <p class="footer-copy">&#169;2021 Alice. All right reserved</p>
         </div>
     </footer>
+
+    <!-- main js -->
+    <script src="assets/js/app.js"></script>
 </body>
-
-
 
 </html>
