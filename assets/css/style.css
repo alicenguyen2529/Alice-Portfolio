@@ -493,7 +493,6 @@ about section
     
     .about-section .about-img .img-box img {
         width: 100%;
-        height: 300px;
         width: 300px;
     }
     
@@ -565,7 +564,7 @@ about section
     }
     
     .about-section .experience {
-        padding-bottom: 80px;
+        padding-bottom: 20px;
     }
     
     .about-section .timeline {
@@ -651,7 +650,11 @@ about section
         line-height: 26px;
         margin: 15px 0 0;
     }
-    /*----------------
+
+    .bold {
+        font-weight: 600;
+    }
+/*----------------
 skill section
 ------------------*/
     
